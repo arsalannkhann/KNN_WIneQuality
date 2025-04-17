@@ -4,11 +4,11 @@ import numpy as np
 import joblib
 
 # Load the saved model and scaler
-KNN = joblib.load('Streamlit/knn_model.pkl')
-scaler = joblib.load('Streamlit/scaler.pkl')
+KNN = joblib.load('knn_model.pkl')
+scaler = joblib.load('scaler.pkl')
 
 # Load the dataset
-data = pd.read_csv('/Users/arsalankhan/.cache/kagglehub/datasets/yasserh/wine-quality-dataset/versions/1/WineQT.csv')
+data = pd.read_csv('WineQT.csv')
 
 # Streamlit app
 st.title("Wine Quality Prediction App")
